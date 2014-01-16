@@ -3,9 +3,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -36,8 +33,16 @@ group :doc do
 end
 
 group :development, :test do
+  # Use sqlite3 as the development/test database for Active Record
+  gem 'sqlite3'
+
   gem 'rspec-mocks', '~> 3.0.0.beta'
   gem 'rspec-rails', '~> 3.0.0.beta'
+end
+
+group :production do
+  # Use postgre as the production database for Active Record
+  gem 'pg'
 end
 
 # Use ActiveModel has_secure_password
