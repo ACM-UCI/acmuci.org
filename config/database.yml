@@ -19,7 +19,9 @@ test:
   timeout: 5000
 
 production:
-  adapter: postgreqsql
-  database: db/production.sqlite3
+  adapter: postgresql
+  database: acmorg
   pool: 5
   timeout: 5000
+  username: acmorg
+  password: acmorg
