@@ -149,7 +149,6 @@ center; }
 #content .inner {
 	margin: 0 auto;
 	overflow: hidden;
-	repeat-y;
 }
 
 #content.home .inner { background: url("images/content-inner-bg.png") scroll; }
